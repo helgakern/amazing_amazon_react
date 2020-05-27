@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ProductDetails from './components/ProductDetails';
-import ReviewDetails from './components/ReviewDetails';
-
-import prodcutData from './data/product';
-import reviewData from './data/review';
+import ProductShowPage from './components/ProductShowPage';
+import ProductIndexPage from '../src/ProductIndexPage';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ProductDetails {...prodcutData}/>
-    <ReviewDetails {...reviewData}/>
+    <ProductShowPage />
+    <ProductIndexPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
